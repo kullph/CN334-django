@@ -21,7 +21,12 @@ from ecommerce import views as ecom_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ecom/', ecom_views.ecommerce_index_view),
-    path('ecom/item/<item_id>', ecom_views.item_view)
+    path('ecom/item/<item_id>', ecom_views.item_view),
+    path('home/', ecom_views.home),
+    path('category/', ecom_views.category),
+    path('product/', ecom_views.product),
+    path('checkout/', ecom_views.checkout),
+    path('contact/', ecom_views.contact),
 ]
 
 
